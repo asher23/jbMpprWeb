@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 a {
@@ -12,10 +12,25 @@ label {
 
 nav a {
   display: inline-block;
-  margin: 1em;
+  /* margin: 1em; */
 }
 
 form div {
-  margin: 1em;
+  /* margin: 1em; */
   display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.sidebar {
+  height: calc(100vh - 30px);
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  bottom: 0; /* Stay at the top */
+  right: 0;
+  background-color: green; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
